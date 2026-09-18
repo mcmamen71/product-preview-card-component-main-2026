@@ -21,31 +21,22 @@
     rel="stylesheet">
   <title>Frontend Mentor | Product preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 0.6875rem;
-      text-align: center;
-    }
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
   <main class="product">
 
-    <section class="product__image">
+    <picture>
+      <source class="product__image-desktop" media="(min-width:700px)" srcset="images/image-product-desktop.jpg">
 
-      <img src="images/image-product-mobile.jpg" alt="Gabrielle Essence Eau De Parfum bottle">
+      <img class="product__image" src="images/image-product-mobile.jpg" alt="Perfum">
+    </picture>
 
-    </section>
 
     <div class="product__content">
 
-      <p class="product__category">PERFUME</p>
+      <p class="product__category">Perfume</p>
 
       <h1 class="product__title">Gabrielle Essence Eau De Parfum</h1>
       <p class="product__description">A floral, solar and voluptuous interpretation composed by Olivier Polge,
